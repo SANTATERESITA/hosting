@@ -2418,7 +2418,216 @@ de los padres de familia.
         </section>
         <section id="protocolos">
             <h4>Protocolos</h4>
-            <p>Los protocolos incluyen guías para la mediación contra la violencia y el acoso escolar, promoviendo un entorno saludable.</p>
+            <p>Los protocolos incluyen guías para la mediación contra la violencia y el acoso escolar, promoviendo un entorno saludable.  <p><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Denuncias de Acoso Escolar</title>
+</head>
+<body>
+
+    <h2>Formulario Institucional para la Recepción de Denuncias de Acoso Escolar</h2>
+    <h3>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h3>
+    <h3>San Andrés de Tumaco</h3>
+
+    <form action="#" method="post">
+
+        <h4>1. Datos de la Persona que Reporta la Situación</h4>
+
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre_completo"><br><br>
+
+        <label>Rol en la comunidad educativa:</label><br>
+        <input type="radio" id="estudiante" name="rol" value="Estudiante">
+        <label for="estudiante">Estudiante</label><br>
+        <input type="radio" id="docente" name="rol" value="Docente">
+        <label for="docente">Docente</label><br>
+        <input type="radio" id="padre" name="rol" value="Padre/madre de familia">
+        <label for="padre">Padre/madre de familia</label><br>
+        <input type="radio" id="administrativo" name="rol" value="Personal administrativo">
+        <label for="administrativo">Personal administrativo</label><br>
+        <input type="radio" id="otro" name="rol" value="Otro">
+        <label for="otro">Otro:</label>
+        <input type="text" name="otro_rol"><br><br>
+
+        <label for="grado">Grado o Curso (si es estudiante):</label><br>
+        <input type="text" id="grado" name="grado_curso"><br><br>
+
+        <label>Relación con la situación de acoso:</label><br>
+        <input type="radio" id="victima" name="relacion" value="Víctima">
+        <label for="victima">Víctima</label><br>
+        <input type="radio" id="testigo" name="relacion" value="Testigo">
+        <label for="testigo">Testigo</label><br>
+        <input type="radio" id="otra" name="relacion" value="Otra">
+        <label for="otra">Otra:</label>
+        <input type="text" name="otra_relacion"><br><br>
+
+        <label>¿Desea que su identidad permanezca confidencial?</label><br>
+        <input type="radio" id="si" name="confidencial" value="Sí">
+        <label for="si">Sí</label><br>
+        <input type="radio" id="no" name="confidencial" value="No">
+        <label for="no">No</label><br><br>
+
+        <h4>2. Información sobre la Situación de Acoso</h4>
+
+        <label for="fecha">Fecha en que ocurrió el acoso (dd-mm-aaaa):</label><br>
+        <input type="date" id="fecha" name="fecha_acoso"><br><br>
+
+        <label>Lugar donde ocurrió la situación de acoso:</label><br>
+        <input type="checkbox" id="aula" name="lugar_acoso" value="Aula de clases">
+        <label for="aula">Aula de clases</label><br>
+        <input type="checkbox" id="patio" name="lugar_acoso" value="Patio">
+        <label for="patio">Patio</label><br>
+        <input type="checkbox" id="bano" name="lugar_acoso" value="Baño">
+        <label for="bano">Baño</label><br>
+        <input type="checkbox" id="pasillos" name="lugar_acoso" value="Pasillos">
+        <label for="pasillos">Pasillos</label><br>
+        <input type="checkbox" id="redes" name="lugar_acoso" value="Redes sociales">
+        <label for="redes">Redes sociales</label><br>
+        <input type="checkbox" id="mensajes" name="lugar_acoso" value="Mensajes de texto">
+        <label for="mensajes">Mensajes de texto</label><br>
+        <input type="checkbox" id="otro_lugar" name="lugar_acoso" value="Otro">
+        <label for="otro_lugar">Otro:</label>
+        <input type="text" name="otro_lugar_detalle"><br><br>
+
+        <label>Tipo de acoso:</label><br>
+        <input type="checkbox" id="verbal" name="tipo_acoso" value="Verbal">
+        <label for="verbal">Verbal (insultos, burlas)</label><br>
+        <input type="checkbox" id="fisico" name="tipo_acoso" value="Físico">
+        <label for="fisico">Físico (empujones, golpes)</label><br>
+        <input type="checkbox" id="exclusion" name="tipo_acoso" value="Exclusión social">
+        <label for="exclusion">Exclusión social (ignorar, aislar)</label><br>
+        <input type="checkbox" id="intimidacion" name="tipo_acoso" value="Intimidación">
+        <label for="intimidacion">Intimidación (amenazas, chantajes)</label><br>
+        <input type="checkbox" id="ciberacoso" name="tipo_acoso" value="Ciberacoso">
+        <label for="ciberacoso">Ciberacoso (a través de redes sociales o medios electrónicos)</label><br>
+        <input type="checkbox" id="otro_acoso" name="tipo_acoso" value="Otro">
+        <label for="otro_acoso">Otro:</label>
+        <input type="text" name="otro_acoso_detalle"><br><br>
+
+        <label for="descripcion">Descripción detallada de lo ocurrido:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="10" cols="50"></textarea><br><br>
+
+        <h4>3. Personas Involucradas</h4>
+
+        <label for="agresor">Nombre(s) del/los presunto(s) agresor(es):</label><br>
+        <textarea id="agresor" name="agresor" rows="2" cols="50"></textarea><br><br>
+
+        <label for="grado_agresor">Grado o Curso (si es estudiante):</label><br>
+        <input type="text" id="grado_agresor" name="grado_agresor"><br><br>
+
+        <label for="testigos">Testigos (si los hubo):</label><br>
+        <textarea id="testigos" name="testigos" rows="2" cols="50"></textarea><br><br>
+
+        <h4>4. Medidas Inmediatas Tomadas (si corresponde)</h4>
+
+        <label>¿Se tomaron medidas en el momento?</label><br>
+        <input type="radio" id="si_medidas" name="medidas_tomadas" value="Sí">
+        <label for="si_medidas">Sí</label><br>
+        <input type="radio" id="no_medidas" name="medidas_tomadas" value="No">
+        <label for="no_medidas">No</label><br><br>
+
+        <label for="descripcion_medidas">Si respondió 'Sí', describa las medidas tomadas:</label><br>
+        <textarea id="descripcion_medidas" name="descripcion_medidas" rows="5" cols="50"></textarea><br><br>
+
+        <h4>5. Firma y Fecha</h4>
+
+        <label for="firma">Firma de la persona que reporta (opcional):</label><br>
+        <input type="text" id="firma" name="firma"><br><br>
+
+        <label for="fecha">Fecha de presentación de la denuncia:</label><br>
+        <input type="date" id="fecha" name="fecha_denuncia"><br><br>
+
+        <h4>6. Para Uso del Comité de Convivencia</h4>
+
+        <label for="nombre_comite">Nombre del miembro del comité que recibió la denuncia:</label><br>
+        <input type="text" id="nombre_comite" name="nombre_comite"><br><br>
+
+        <label for="acciones">Acciones iniciales tomadas:</label><br>
+        <textarea id="acciones" name="acciones" rows="5" cols="50"></textarea><br><br>
+
+        <label for="fecha_investigacion">Fecha de inicio de la investigación:</label><br>
+        <input type="date" id="fecha_investigacion" name="fecha_investigacion"><br><br>
+
+        <input type="submit" value="Enviar denuncia">
+  <li><a href="#">Regresar a Inicio</a></li>
+    </form>
+
+<p><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuerdo de Convivencia</title>
+</head>
+<body>
+
+    <h2>Acuerdo de Convivencia para la Resolución de Conflictos</h2>
+    <h3>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h3>
+    <h3>San Andrés de Tumaco</h3>
+
+    <p><strong>Fecha de la mediación:</strong> ___/___/______</p>
+    <p><strong>Lugar de la mediación:</strong> ___________________________________</p>
+
+    <h4>1. Datos de las Partes Involucradas</h4>
+
+    <p><strong>Nombre de la víctima:</strong> ______________________________________________</p>
+    <p><strong>Grado/Curso:</strong> ____________________</p>
+    <p><strong>Nombre de la agresora:</strong> _______________________________________________</p>
+    <p><strong>Grado/Curso:</strong> ____________________</p>
+
+    <h4>2. Descripción del Conflicto</h4>
+
+    <p><strong>Descripción de la situación de acoso que se está resolviendo:</strong></p>
+    <p>(Detallar brevemente los hechos que dieron lugar al conflicto)</p>
+    <textarea rows="8" cols="100"></textarea><br><br>
+
+    <h4>3. Compromisos Adquiridos</h4>
+    <p>Las partes involucradas, con el acompañamiento del comité de convivencia y la orientación, se comprometen a cesar cualquier tipo de acoso y a promover un ambiente de respeto y sana convivencia dentro de la institución. A continuación, se detallan los compromisos específicos:</p>
+    <textarea rows="8" cols="100"></textarea><br><br>
+
+    <h4>3.1 Compromisos de la persona señalada como agresora:</h4>
+    <ul>
+        <li><input type="checkbox"> Cesar de inmediato cualquier comportamiento de acoso, intimidación o exclusión hacia la víctima u otras compañeras.</li>
+        <li><input type="checkbox"> Mantener un trato respetuoso en todas las interacciones, tanto dentro como fuera del aula.</li>
+        <li><input type="checkbox"> Participar activamente en las actividades de sensibilización y formación sobre convivencia pacífica propuestas por la institución.</li>
+        <li><input type="checkbox"> Si corresponde, realizar actividades de reparación simbólica o comunitaria en beneficio de la víctima y/o la comunidad escolar.</li>
+    </ul>
+
+    <p><strong>Firma de la agresora:</strong> ____________________________________________________________</p>
+
+    <h4>3.2 Compromisos de la persona señalada como víctima:</h4>
+    <ul>
+        <li><input type="checkbox"> Mantener una conducta respetuosa hacia los miembros de la comunidad escolar.</li>
+        <li><input type="checkbox"> Evitar cualquier comportamiento provocador o de represalia hacia el agresor.</li>
+        <li><input type="checkbox"> Informar de inmediato al comité de convivencia o a los orientadores si el acoso persiste o si ocurren nuevas situaciones de conflicto.</li>
+    </ul>
+
+    <p><strong>Firma de la víctima:</strong> ____________________________________________________________</p>
+
+    <h4>4. Compromisos Adicionales</h4>
+    <p><strong>Compromisos del comité de convivencia y orientadores:</strong></p>
+    <ul>
+        <li><input type="checkbox"> Hacer seguimiento periódico a la situación para verificar que se cumpla con los acuerdos establecidos.</li>
+        <li><input type="checkbox"> Ofrecer espacios de apoyo emocional y psicológico a las partes involucradas, en caso de ser necesario.</li>
+        <li><input type="checkbox"> Coordinar actividades de formación y sensibilización en torno a la convivencia pacífica y el respeto mutuo.</li>
+    </ul>
+
+    <p><strong>Firma del representante del comité de convivencia/orientadora:</strong> ____________________________________________________________</p>
+
+    <h4>5. Consecuencias en caso de incumplimiento</h4>
+    <p>Ambas partes comprenden que el incumplimiento de los compromisos adquiridos en este acuerdo puede dar lugar a la aplicación de medidas disciplinarias establecidas en el manual de convivencia de la institución, que podrían incluir desde amonestaciones hasta sanciones mayores, según la gravedad de la situación.</p>
+
+    <h4>Firmas de Testigos (si aplica):</h4>
+    <p>__________________________________________</p>
+    <p>__________________________________________</p>
+    <p>__________________________________________</p>
+    <p>__________________________________________</p>
+
+    <p><strong>Fecha de revisión del acuerdo (por parte del comité de convivencia):</strong> ___/___/______</p>
+
+    <p>Este Acuerdo de Convivencia busca poner fin a la situación de acoso de manera justa y equitativa, comprometiendo a todas las partes a contribuir a un entorno escolar pacífico y respetuoso.</p>.</p>
         </section>
         <section id="anexos">
             <h4>Anexos</h4>
@@ -3873,216 +4082,7 @@ PROYECTOS TRANSVERSALES
         </section>
         <section id="trámites">
             <h4>Trámites</h4>
-            <p><!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Denuncias de Acoso Escolar</title>
-</head>
-<body>
-
-    <h2>Formulario Institucional para la Recepción de Denuncias de Acoso Escolar</h2>
-    <h3>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h3>
-    <h3>San Andrés de Tumaco</h3>
-
-    <form action="#" method="post">
-
-        <h4>1. Datos de la Persona que Reporta la Situación</h4>
-
-        <label for="nombre">Nombre completo:</label><br>
-        <input type="text" id="nombre" name="nombre_completo"><br><br>
-
-        <label>Rol en la comunidad educativa:</label><br>
-        <input type="radio" id="estudiante" name="rol" value="Estudiante">
-        <label for="estudiante">Estudiante</label><br>
-        <input type="radio" id="docente" name="rol" value="Docente">
-        <label for="docente">Docente</label><br>
-        <input type="radio" id="padre" name="rol" value="Padre/madre de familia">
-        <label for="padre">Padre/madre de familia</label><br>
-        <input type="radio" id="administrativo" name="rol" value="Personal administrativo">
-        <label for="administrativo">Personal administrativo</label><br>
-        <input type="radio" id="otro" name="rol" value="Otro">
-        <label for="otro">Otro:</label>
-        <input type="text" name="otro_rol"><br><br>
-
-        <label for="grado">Grado o Curso (si es estudiante):</label><br>
-        <input type="text" id="grado" name="grado_curso"><br><br>
-
-        <label>Relación con la situación de acoso:</label><br>
-        <input type="radio" id="victima" name="relacion" value="Víctima">
-        <label for="victima">Víctima</label><br>
-        <input type="radio" id="testigo" name="relacion" value="Testigo">
-        <label for="testigo">Testigo</label><br>
-        <input type="radio" id="otra" name="relacion" value="Otra">
-        <label for="otra">Otra:</label>
-        <input type="text" name="otra_relacion"><br><br>
-
-        <label>¿Desea que su identidad permanezca confidencial?</label><br>
-        <input type="radio" id="si" name="confidencial" value="Sí">
-        <label for="si">Sí</label><br>
-        <input type="radio" id="no" name="confidencial" value="No">
-        <label for="no">No</label><br><br>
-
-        <h4>2. Información sobre la Situación de Acoso</h4>
-
-        <label for="fecha">Fecha en que ocurrió el acoso (dd-mm-aaaa):</label><br>
-        <input type="date" id="fecha" name="fecha_acoso"><br><br>
-
-        <label>Lugar donde ocurrió la situación de acoso:</label><br>
-        <input type="checkbox" id="aula" name="lugar_acoso" value="Aula de clases">
-        <label for="aula">Aula de clases</label><br>
-        <input type="checkbox" id="patio" name="lugar_acoso" value="Patio">
-        <label for="patio">Patio</label><br>
-        <input type="checkbox" id="bano" name="lugar_acoso" value="Baño">
-        <label for="bano">Baño</label><br>
-        <input type="checkbox" id="pasillos" name="lugar_acoso" value="Pasillos">
-        <label for="pasillos">Pasillos</label><br>
-        <input type="checkbox" id="redes" name="lugar_acoso" value="Redes sociales">
-        <label for="redes">Redes sociales</label><br>
-        <input type="checkbox" id="mensajes" name="lugar_acoso" value="Mensajes de texto">
-        <label for="mensajes">Mensajes de texto</label><br>
-        <input type="checkbox" id="otro_lugar" name="lugar_acoso" value="Otro">
-        <label for="otro_lugar">Otro:</label>
-        <input type="text" name="otro_lugar_detalle"><br><br>
-
-        <label>Tipo de acoso:</label><br>
-        <input type="checkbox" id="verbal" name="tipo_acoso" value="Verbal">
-        <label for="verbal">Verbal (insultos, burlas)</label><br>
-        <input type="checkbox" id="fisico" name="tipo_acoso" value="Físico">
-        <label for="fisico">Físico (empujones, golpes)</label><br>
-        <input type="checkbox" id="exclusion" name="tipo_acoso" value="Exclusión social">
-        <label for="exclusion">Exclusión social (ignorar, aislar)</label><br>
-        <input type="checkbox" id="intimidacion" name="tipo_acoso" value="Intimidación">
-        <label for="intimidacion">Intimidación (amenazas, chantajes)</label><br>
-        <input type="checkbox" id="ciberacoso" name="tipo_acoso" value="Ciberacoso">
-        <label for="ciberacoso">Ciberacoso (a través de redes sociales o medios electrónicos)</label><br>
-        <input type="checkbox" id="otro_acoso" name="tipo_acoso" value="Otro">
-        <label for="otro_acoso">Otro:</label>
-        <input type="text" name="otro_acoso_detalle"><br><br>
-
-        <label for="descripcion">Descripción detallada de lo ocurrido:</label><br>
-        <textarea id="descripcion" name="descripcion" rows="10" cols="50"></textarea><br><br>
-
-        <h4>3. Personas Involucradas</h4>
-
-        <label for="agresor">Nombre(s) del/los presunto(s) agresor(es):</label><br>
-        <textarea id="agresor" name="agresor" rows="2" cols="50"></textarea><br><br>
-
-        <label for="grado_agresor">Grado o Curso (si es estudiante):</label><br>
-        <input type="text" id="grado_agresor" name="grado_agresor"><br><br>
-
-        <label for="testigos">Testigos (si los hubo):</label><br>
-        <textarea id="testigos" name="testigos" rows="2" cols="50"></textarea><br><br>
-
-        <h4>4. Medidas Inmediatas Tomadas (si corresponde)</h4>
-
-        <label>¿Se tomaron medidas en el momento?</label><br>
-        <input type="radio" id="si_medidas" name="medidas_tomadas" value="Sí">
-        <label for="si_medidas">Sí</label><br>
-        <input type="radio" id="no_medidas" name="medidas_tomadas" value="No">
-        <label for="no_medidas">No</label><br><br>
-
-        <label for="descripcion_medidas">Si respondió 'Sí', describa las medidas tomadas:</label><br>
-        <textarea id="descripcion_medidas" name="descripcion_medidas" rows="5" cols="50"></textarea><br><br>
-
-        <h4>5. Firma y Fecha</h4>
-
-        <label for="firma">Firma de la persona que reporta (opcional):</label><br>
-        <input type="text" id="firma" name="firma"><br><br>
-
-        <label for="fecha">Fecha de presentación de la denuncia:</label><br>
-        <input type="date" id="fecha" name="fecha_denuncia"><br><br>
-
-        <h4>6. Para Uso del Comité de Convivencia</h4>
-
-        <label for="nombre_comite">Nombre del miembro del comité que recibió la denuncia:</label><br>
-        <input type="text" id="nombre_comite" name="nombre_comite"><br><br>
-
-        <label for="acciones">Acciones iniciales tomadas:</label><br>
-        <textarea id="acciones" name="acciones" rows="5" cols="50"></textarea><br><br>
-
-        <label for="fecha_investigacion">Fecha de inicio de la investigación:</label><br>
-        <input type="date" id="fecha_investigacion" name="fecha_investigacion"><br><br>
-
-        <input type="submit" value="Enviar denuncia">
-  <li><a href="#">Regresar a Inicio</a></li>
-    </form>
-
-<p><!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acuerdo de Convivencia</title>
-</head>
-<body>
-
-    <h2>Acuerdo de Convivencia para la Resolución de Conflictos</h2>
-    <h3>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h3>
-    <h3>San Andrés de Tumaco</h3>
-
-    <p><strong>Fecha de la mediación:</strong> ___/___/______</p>
-    <p><strong>Lugar de la mediación:</strong> ___________________________________</p>
-
-    <h4>1. Datos de las Partes Involucradas</h4>
-
-    <p><strong>Nombre de la víctima:</strong> ______________________________________________</p>
-    <p><strong>Grado/Curso:</strong> ____________________</p>
-    <p><strong>Nombre de la agresora:</strong> _______________________________________________</p>
-    <p><strong>Grado/Curso:</strong> ____________________</p>
-
-    <h4>2. Descripción del Conflicto</h4>
-
-    <p><strong>Descripción de la situación de acoso que se está resolviendo:</strong></p>
-    <p>(Detallar brevemente los hechos que dieron lugar al conflicto)</p>
-    <textarea rows="8" cols="100"></textarea><br><br>
-
-    <h4>3. Compromisos Adquiridos</h4>
-    <p>Las partes involucradas, con el acompañamiento del comité de convivencia y la orientación, se comprometen a cesar cualquier tipo de acoso y a promover un ambiente de respeto y sana convivencia dentro de la institución. A continuación, se detallan los compromisos específicos:</p>
-    <textarea rows="8" cols="100"></textarea><br><br>
-
-    <h4>3.1 Compromisos de la persona señalada como agresora:</h4>
-    <ul>
-        <li><input type="checkbox"> Cesar de inmediato cualquier comportamiento de acoso, intimidación o exclusión hacia la víctima u otras compañeras.</li>
-        <li><input type="checkbox"> Mantener un trato respetuoso en todas las interacciones, tanto dentro como fuera del aula.</li>
-        <li><input type="checkbox"> Participar activamente en las actividades de sensibilización y formación sobre convivencia pacífica propuestas por la institución.</li>
-        <li><input type="checkbox"> Si corresponde, realizar actividades de reparación simbólica o comunitaria en beneficio de la víctima y/o la comunidad escolar.</li>
-    </ul>
-
-    <p><strong>Firma de la agresora:</strong> ____________________________________________________________</p>
-
-    <h4>3.2 Compromisos de la persona señalada como víctima:</h4>
-    <ul>
-        <li><input type="checkbox"> Mantener una conducta respetuosa hacia los miembros de la comunidad escolar.</li>
-        <li><input type="checkbox"> Evitar cualquier comportamiento provocador o de represalia hacia el agresor.</li>
-        <li><input type="checkbox"> Informar de inmediato al comité de convivencia o a los orientadores si el acoso persiste o si ocurren nuevas situaciones de conflicto.</li>
-    </ul>
-
-    <p><strong>Firma de la víctima:</strong> ____________________________________________________________</p>
-
-    <h4>4. Compromisos Adicionales</h4>
-    <p><strong>Compromisos del comité de convivencia y orientadores:</strong></p>
-    <ul>
-        <li><input type="checkbox"> Hacer seguimiento periódico a la situación para verificar que se cumpla con los acuerdos establecidos.</li>
-        <li><input type="checkbox"> Ofrecer espacios de apoyo emocional y psicológico a las partes involucradas, en caso de ser necesario.</li>
-        <li><input type="checkbox"> Coordinar actividades de formación y sensibilización en torno a la convivencia pacífica y el respeto mutuo.</li>
-    </ul>
-
-    <p><strong>Firma del representante del comité de convivencia/orientadora:</strong> ____________________________________________________________</p>
-
-    <h4>5. Consecuencias en caso de incumplimiento</h4>
-    <p>Ambas partes comprenden que el incumplimiento de los compromisos adquiridos en este acuerdo puede dar lugar a la aplicación de medidas disciplinarias establecidas en el manual de convivencia de la institución, que podrían incluir desde amonestaciones hasta sanciones mayores, según la gravedad de la situación.</p>
-
-    <h4>Firmas de Testigos (si aplica):</h4>
-    <p>__________________________________________</p>
-    <p>__________________________________________</p>
-    <p>__________________________________________</p>
-    <p>__________________________________________</p>
-
-    <p><strong>Fecha de revisión del acuerdo (por parte del comité de convivencia):</strong> ___/___/______</p>
-
-    <p>Este Acuerdo de Convivencia busca poner fin a la situación de acoso de manera justa y equitativa, comprometiendo a todas las partes a contribuir a un entorno escolar pacífico y respetuoso.</p>
+          
 
 </body>
 </html>

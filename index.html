@@ -77,21 +77,41 @@
 
 	    
         nav {
-            background-color: #FFD700; /* Dorado */
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            position: relative;
-        }
-        nav a {
-            color: #964B00; /* Marrón */
-            text-decoration: none;
-            padding: 10px 15px;
-            position: relative;
-        }
-        nav a:hover {
-            background-color: #8BC34A; /* Verde */
-        }
+    background-color: #FFD700; /* Dorado */
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme */
+    padding: 10px;
+    position: relative;
+}
+
+nav a {
+    color: #964B00; /* Marrón */
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    font-weight: bold; /* Texto más destacado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #8BC34A; /* Verde */
+    color: white; /* Texto más visible en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px; /* Ajusta el padding */
+        width: 100%; /* Los enlaces ocupan todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+}
         /* Contenedor del menú desplegable */
         .dropdown {
             position: relative;

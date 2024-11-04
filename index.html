@@ -41,23 +41,23 @@
             margin: 0 auto;
         }
 
-        /* Ajuste responsivo del iframe */
+        /* Ajuste responsivo del iframe con tamaño reducido */
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* Aspect ratio 16:9 */
             height: 0;
             overflow: hidden;
-            max-width: 100%;
+            max-width: 80%; /* Limita el tamaño máximo del video */
+            margin: 0 auto; /* Centra el video */
             background-color: #000;
         }
 
         .video-container iframe {
             position: absolute;
             top: 0;
-            left: 50%;
+            left: 0;
             width: 100%;
             height: 100%;
-            transform: translateX(-50%);
         }
 
         footer {
@@ -79,6 +79,10 @@
             footer {
                 font-size: 0.8rem;
             }
+
+            .video-container {
+                max-width: 100%; /* Aumenta el tamaño del video en pantallas pequeñas */
+            }
         }
     </style>
 </head>
@@ -91,7 +95,7 @@
     <main>
         <p>Bienvenidos a nuestra página web. A continuación, puedes escuchar el himno institucional:</p>
 
-        <!-- Contenedor responsivo del video -->
+        <!-- Contenedor responsivo del video con tamaño reducido -->
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/E761oHdor5A?start=18&autoplay=1&mute=0" 
@@ -107,6 +111,7 @@
     </footer>
 </body>
 </html>
+
 
 
         <h1>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h1>

@@ -97,6 +97,20 @@
             margin: 0 auto;
         }
 
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto; /* Espacio superior e inferior */
+            max-width: 80%; /* Limitar el ancho máximo del contenedor */
+            box-sizing: border-box; /* Incluye el padding y borde en el ancho */
+        }
+
+        iframe {
+            width: 100%; /* Ancho completo del contenedor */
+            max-width: 560px; /* Ancho máximo del reproductor */
+            height: 315px; /* Altura del reproductor */
+        }
+
         footer {
             background-color: #964B00; /* Marrón */
             color: white;

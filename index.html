@@ -100,15 +100,17 @@
         .video-container {
             display: flex;
             justify-content: center;
-            margin: 40px auto; /* Espacio superior e inferior */
-            max-width: 80%; /* Limitar el ancho máximo del contenedor */
-            box-sizing: border-box; /* Incluye el padding y borde en el ancho */
+            align-items: center;
+            background-color: white; /* Fondo blanco */
+            padding: 20px; /* Espaciado alrededor del video */
+            margin: 20px auto; /* Centrado con márgenes superior e inferior */
+            max-width: 640px; /* Ancho máximo del contenedor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
         }
 
         iframe {
             width: 100%; /* Ancho completo del contenedor */
-            max-width: 560px; /* Ancho máximo del reproductor */
-            height: 315px; /* Altura del reproductor */
+            height: 360px; /* Altura proporcional */
         }
 
         footer {
@@ -146,6 +148,7 @@
     </footer>
 </body>
 </html>
+
 
 			
       	    </nav>

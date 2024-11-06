@@ -21,6 +21,7 @@
             display: flex;
             align-items: center;
             padding: 20px;
+            position: relative;
             justify-content: center;
         }
 
@@ -63,35 +64,41 @@
             transform: scale(1.05);
         }
 
-        /* Sección de Noticias */
-        .news-section {
-            background-color: #E0EBFF;
-            border: 2px solid #004080;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+        /* Submenú */
+        .dropdown {
+            position: relative;
         }
 
-        .news-section h2 {
-            font-size: 1.6rem;
-            color: #004080;
-            text-align: center;
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F9F9; /* Fondo blanco */
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 2;
+            right: 0;
+            border-radius: 5px;
         }
 
-        .news-item {
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
-        .news-item:last-child {
-            border-bottom: none;
+        .dropdown-content a {
+            color: #004080; /* Azul oscuro */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
         }
 
-        .news-date {
-            font-size: 0.9rem;
-            color: #888;
+        .dropdown-content a:hover {
+            background-color: #66CC99; /* Verde suave */
+            color: white;
+            border-radius: 5px;
         }
 
+        /* Enlaces sociales */
         .social-links {
             display: flex;
             justify-content: center;
@@ -158,6 +165,39 @@
             text-decoration: underline;
         }
 
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin: 0 0 10px 0;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            iframe {
+                width: 280px;
+                height: 158px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -168,15 +208,6 @@
     <p style="text-align: center; color: #004080; font-weight: bold;">Bienvenidos a nuestra página web. A continuación, puedes escuchar el himno institucional:</p>
 
     <main>
-        <!-- Sección de Noticias y Eventos en Vivo -->
-        <div class="news-section" id="news-section">
-            <h2>Noticias y Eventos en Vivo</h2>
-            <div id="news-container">
-                <!-- Aquí se agregarán automáticamente las noticias -->
-            </div>
-        </div>
-
-        <!-- Contenido adicional de la página -->
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/E761oHdor5A?start=18&autoplay=1&mute=0" 
@@ -187,60 +218,73 @@
         </div>
     </main>
 
+    <h1 style="text-align: center; font-size: 1.5rem; margin-top: 20px; color: #004080;">"Fortaleciendo procesos hacia el mejoramiento continuo"</h1>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#bienvenido"><i class="fas fa-home"></i> Bienvenido</a>
+            <div class="dropdown-content">
+                <a href="#introduccion"><i class="fas fa-info-circle"></i> Introducción</a>
+                <a href="#historia"><i class="fas fa-history"></i> Historia</a>
+                <a href="#pei"><i class="fas fa-book"></i> Proyecto Educativo Institucional</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#proyectos"><i class="fas fa-file-alt"></i> Manuales de Convivencia</a>
+            <div class="dropdown-content">
+                <a href="#comité"><i class="fas fa-users"></i> Comité</a>
+                <a href="#referentes"><i class="fas fa-gavel"></i> Referentes Conceptuales y Legales</a>
+                <a href="#horizonte"><i class="fas fa-binoculars"></i> Horizonte Institucional</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#manual"><i class="fas fa-project-diagram"></i> Proyectos Pedagógicos Transversales</a>
+            <div class="dropdown-content">
+                <a href="#proyectos"><i class="fas fa-lightbulb"></i> Proyectos</a>
+                <a href="#Prácticas"><i class="fas fa-check"></i> Buenas Prácticas</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#evaluacion"><i class="fas fa-chart-line"></i> Sistema de Evaluación</a>
+            <div class="dropdown-content">
+                <a href="#criterios"><i class="fas fa-list-alt"></i> Criterios</a>
+                <a href="#Mejoramiento"><i class="fas fa-arrow-up"></i> Mejoramiento</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#mejoramiento"><i class="fas fa-cogs"></i> Plan de Mejoramiento</a>
+            <div class="dropdown-content">
+                <a href="#acciones"><i class="fas fa-tasks"></i> Acciones</a>
+                <a href="#direccionamiento"><i class="fas fa-map-signs"></i> Direccionamiento Estratégico</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#recursos"><i class="fas fa-child"></i> Recursos para Padres y Estudiantes</a>
+            <div class="dropdown-content">
+                <a href="#documentos"><i class="fas fa-file-pdf"></i> Documentos</a>
+                <a href="#trámites"><i class="fas fa-handshake"></i> Trámites</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#imagen"><i class="fas fa-images"></i> Video e Imágenes</a>
+            <div class="dropdown-content">
+                <a href="#imagen"><i class="fas fa-image"></i> Imagen</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/stateresitatco?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.youtube.com/@rectoriasantateresita-tuma5577" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+    </div>
+
     <footer>
         <p>santater1950@yahoo.es - rectoriasantateresita@gmail.com</p>
         <p>Calle 11 12-10 (Caldas frente Parque Nariño) TUMACO - NARIÑO</p>
-        <p>1957 - 2024.</p>
-    </footer>
-
-    <!-- Script para simular la actualización de noticias -->
-    <script>
-        const newsContainer = document.getElementById('news-container');
-
-        // Lista de noticias de ejemplo
-        const noticias = [
-            { fecha: '2024-11-05', titulo: 'Día de la Ciencia en la Institución', descripcion: 'Los estudiantes presentaron sus proyectos de investigación.' },
-            { fecha: '2024-11-10', titulo: 'Jornada de Puertas Abiertas', descripcion: 'Visita nuestra institución y conoce nuestras instalaciones.' },
-            { fecha: '2024-11-15', titulo: 'Concierto de Fin de Año', descripcion: 'Celebración de fin de año con la comunidad educativa.' }
-        ];
-
-        // Función para mostrar las noticias
-        function mostrarNoticias() {
-            newsContainer.innerHTML = '';
-            noticias.forEach(noticia => {
-                const newsItem = document.createElement('div');
-                newsItem.classList.add('news-item');
-                
-                const newsDate = document.createElement('p');
-                newsDate.classList.add('news-date');
-                newsDate.textContent = noticia.fecha;
-
-                const newsTitle = document.createElement('h3');
-                newsTitle.textContent = noticia.titulo;
-
-                const newsDescription = document.createElement('p');
-                newsDescription.textContent = noticia.descripcion;
-
-                newsItem.appendChild(newsDate);
-                newsItem.appendChild(newsTitle);
-                newsItem.appendChild(newsDescription);
-
-                newsContainer.appendChild(newsItem);
-            });
-        }
-
-        // Simula la actualización de noticias cada 10 segundos
-        setInterval(() => {
-            const nuevaFecha = new Date().toISOString().split('T')[0];
-            noticias.push({ fecha: nuevaFecha, titulo: 'Nuevo Evento Agregado', descripcion: 'Descripción del nuevo evento o noticia.' });
-            mostrarNoticias();
-        }, 10000); // Actualiza cada 10 segundos
-
-        // Llama a la función para mostrar las noticias al cargar la página
-        mostrarNoticias();
-    </script>
+           </footer>
 </body>
 </html>
+
 
 
 

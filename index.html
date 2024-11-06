@@ -10,13 +10,13 @@
         /* Estilos básicos */
         body {
             font-family: Arial, sans-serif;
-            background-color: #F5F5DC; /* Beige */
+            background-color: #F0F8FF; /* Azul claro */
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #964B00; /* Marrón (igual al footer) */
+            background-color: #004080; /* Azul oscuro */
             color: white;
             display: flex;
             align-items: center;
@@ -32,16 +32,16 @@
         }
 
         header h1 {
-            font-size: 1.8rem; /* Ajustar tamaño del texto */
+            font-size: 1.8rem;
             font-weight: bold;
             font-family: 'Arial', sans-serif;
-            color: white; /* Cambiado a blanco para contraste */
+            color: #FDFD96; /* Amarillo suave */
             margin: 0;
             text-align: center;
         }
 
         nav {
-            background-color: #FFD700; /* Dorado */
+            background-color: #E0EBFF; /* Azul muy claro */
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -51,14 +51,16 @@
 
         nav a {
             text-decoration: none;
-            color: black;
+            color: #004080; /* Azul oscuro */
             padding: 10px 20px;
             text-align: center;
+            font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #8BC34A; /* Verde */
+            background-color: #66CC99; /* Verde suave */
             color: white;
+            border-radius: 5px;
             transform: scale(1.05);
         }
 
@@ -70,11 +72,12 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff;
-            min-width: 160px;
+            background-color: #F9F9F9; /* Fondo blanco */
+            min-width: 180px;
             box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
             z-index: 2;
             right: 0;
+            border-radius: 5px;
         }
 
         .dropdown:hover .dropdown-content {
@@ -82,7 +85,7 @@
         }
 
         .dropdown-content a {
-            color: #964B00;
+            color: #004080; /* Azul oscuro */
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -90,7 +93,9 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #8BC34A; /* Verde */
+            background-color: #66CC99; /* Verde suave */
+            color: white;
+            border-radius: 5px;
         }
 
         /* Enlaces sociales */
@@ -103,15 +108,16 @@
 
         .social-links a {
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
+            color: #004080; /* Azul oscuro */
+            border: 2px solid #004080;
             padding: 10px 20px;
             border-radius: 5px;
             text-align: center;
         }
 
         .social-links a:hover {
-            background-color: #f0f0f0;
+            background-color: #66CC99; /* Verde suave */
+            color: white;
         }
 
         main {
@@ -126,6 +132,10 @@
             justify-content: center;
             align-items: center;
             margin-top: 20px;
+            background-color: #FFFFFF;
+            border: 2px solid #004080;
+            padding: 10px;
+            border-radius: 10px;
         }
 
         iframe {
@@ -134,10 +144,10 @@
         }
 
         footer {
-            background-color: #964B00; /* Marrón */
-            color: white;
+            background-color: #004080; /* Azul oscuro */
+            color: #FDFD96; /* Amarillo suave */
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -184,7 +194,7 @@
         <img src="https://raw.githubusercontent.com/SANTATERESITA/hosting/gh-page/circular_cropped_emblem.png" alt="Escudo Institucional">
         <h1>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h1>
     </header>
-    <p style="text-align: center;">Bienvenidos a nuestra página web. A continuación, puedes escuchar el himno institucional:</p>
+    <p style="text-align: center; color: #004080; font-weight: bold;">Bienvenidos a nuestra página web. A continuación, puedes escuchar el himno institucional:</p>
 
     <main>
         <div class="video-container">
@@ -197,7 +207,7 @@
         </div>
     </main>
 
-    <h1 style="text-align: center; font-size: 1.5rem; margin-top: 20px;">"Fortaleciendo procesos hacia el mejoramiento continuo"</h1>
+    <h1 style="text-align: center; font-size: 1.5rem; margin-top: 20px; color: #004080;">"Fortaleciendo procesos hacia el mejoramiento continuo"</h1>
 
     <nav>
         <div class="dropdown">
@@ -214,7 +224,6 @@
                 <a href="#comité"><i class="fas fa-users"></i> Comité</a>
                 <a href="#referentes"><i class="fas fa-gavel"></i> Referentes Conceptuales y Legales</a>
                 <a href="#horizonte"><i class="fas fa-binoculars"></i> Horizonte Institucional</a>
-                <!-- Agregar más enlaces con íconos aquí -->
             </div>
         </div>
         <div class="dropdown">
@@ -263,6 +272,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

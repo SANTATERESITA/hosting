@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSTITUCIÓN EDUCATIVA SANTA TERESITA</title>
+    <!-- Agregar Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Estilos básicos */
         body {
@@ -19,7 +21,6 @@
             display: flex;
             align-items: center;
             padding: 20px;
-            position: relative;
             justify-content: center;
         }
 
@@ -30,21 +31,24 @@
         }
 
         header h1 {
-            font-size: 1.8rem; /* Ajustar tamaño del texto */
+            font-size: 1.8rem;
             font-weight: bold;
-            font-family: 'Arial', sans-serif;
-            color: white; /* Cambiado a blanco para contraste */
+            color: white;
             margin: 0;
             text-align: center;
         }
 
+        /* Menú fijo en la parte superior */
         nav {
             background-color: #FFD700; /* Dorado */
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
@@ -52,6 +56,12 @@
             color: black;
             padding: 10px 20px;
             text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a i {
+            margin-right: 8px;
         }
 
         nav a:hover {
@@ -197,9 +207,10 @@
 
     <h1 style="text-align: center; font-size: 1.5rem; margin-top: 20px;">"Fortaleciendo procesos hacia el mejoramiento continuo"</h1>
 
+    <!-- Menú de navegación con íconos -->
     <nav>
         <div class="dropdown">
-            <a href="#bienvenido">Bienvenido</a>
+            <a href="#bienvenido"><i class="fas fa-home"></i> Bienvenido</a>
             <div class="dropdown-content">
                 <a href="#introduccion">Introducción</a>
                 <a href="#historia">Historia</a>
@@ -207,7 +218,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="#proyectos">Manuales de Convivencia</a>
+            <a href="#proyectos"><i class="fas fa-book"></i> Manuales de Convivencia</a>
             <div class="dropdown-content">
                 <a href="#comité">Comité</a>
                 <a href="#referentes">Referentes Conceptuales y Legales</a>
@@ -222,21 +233,21 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="#manual">Proyectos Pedagógicos Transversales</a>
+            <a href="#manual"><i class="fas fa-project-diagram"></i> Proyectos Pedagógicos Transversales</a>
             <div class="dropdown-content">
                 <a href="#proyectos">Proyectos</a>
                 <a href="#Prácticas">Buenas Prácticas</a>
             </div>
         </div>
         <div class="dropdown">
-            <a href="#evaluacion">Sistema de Evaluación</a>
+            <a href="#evaluacion"><i class="fas fa-chart-line"></i> Sistema de Evaluación</a>
             <div class="dropdown-content">
                 <a href="#criterios">Criterios</a>
                 <a href="#Mejoramiento">Mejoramiento</a>
             </div>
         </div>
         <div class="dropdown">
-            <a href="#mejoramiento">Plan de Mejoramiento</a>
+            <a href="#mejoramiento"><i class="fas fa-tasks"></i> Plan de Mejoramiento</a>
             <div class="dropdown-content">
                 <a href="#mejoramiento">Plan de Mejoramiento</a>
                 <a href="#acciones">Acciones</a>
@@ -245,7 +256,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="#recursos">Recursos para Padres y Estudiantes</a>
+            <a href="#recursos"><i class="fas fa-users"></i> Recursos para Padres y Estudiantes</a>
             <div class="dropdown-content">
                 <a href="#documentos">Documentos</a>
                 <a href="#trámites">Trámites</a>
@@ -256,7 +267,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="#imagen">Video e Imágenes</a>
+            <a href="#imagen"><i class="fas fa-photo-video"></i> Video e Imágenes</a>
             <div class="dropdown-content">
                 <a href="#imagen">Imagen</a>
             </div>
@@ -264,8 +275,8 @@
     </nav>
 
     <div class="social-links">
-        <a href="https://www.facebook.com/stateresitatco?mibextid=LQQJ4d" target="_blank">Facebook</a>
-        <a href="https://www.youtube.com/@rectoriasantateresita-tuma5577" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/stateresitatco?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.youtube.com/@rectoriasantateresita-tuma5577" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
     </div>
 
     <footer>
@@ -273,6 +284,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

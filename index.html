@@ -21,7 +21,7 @@
             display: flex;
             align-items: center;
             padding: 20px;
-            justify-content: center;
+            flex-direction: column; /* Cambia a columna para centrar el nuevo enlace */
         }
 
         header img {
@@ -37,6 +37,25 @@
             color: #FDFD96; /* Amarillo suave */
             margin: 0;
             text-align: center;
+        }
+
+        /* Estilo del nuevo enlace */
+        header .novedades {
+            font-size: 0.9rem;
+            color: #FFD700; /* Dorado */
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #004080;
+            padding: 5px 10px;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header .novedades:hover {
+            background-color: #FFD700;
+            color: #004080;
         }
 
         nav {
@@ -202,7 +221,10 @@
     <header>
         <img src="https://raw.githubusercontent.com/SANTATERESITA/hosting/gh-page/circular_cropped_emblem.png" alt="Escudo Institucional">
         <h1>INSTITUCIÓN EDUCATIVA SANTA TERESITA</h1>
+        <!-- Enlace de novedades -->
+        <a href="#novedades" class="novedades">Ver Novedades</a>
     </header>
+
     <p style="text-align: center; color: #004080; font-weight: bold;">Bienvenidos a nuestra página web. A continuación, puedes escuchar el himno institucional:</p>
 
     <main>
@@ -283,8 +305,6 @@
 </body>
 </html>
 
-</body>
-</html>
 
 
 
